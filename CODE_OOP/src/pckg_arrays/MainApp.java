@@ -1,5 +1,6 @@
 package pckg_arrays;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class MainApp {
@@ -29,8 +30,13 @@ public class MainApp {
 //        changeElement(names,2);
 //        System.out.println(names[2]);
 
-        populateStringNames(names);
-        listElements(names);
+        //populateStringNames(names);
+        //listElements(names);
+        int[] arr1 = {23, 56, 78, 0, -124, 57, 543, 78, -98, 32};
+        int[] arr2 = Arrays.copyOfRange(arr1, 2, 6);
+        System.out.println(arr1);
+        System.out.println(arr2);
+        System.out.println(Arrays.toString(arr1));
     }
 
     private static void changeElement(String[] nume, int indx){ //drugi argument je ono što želimo zaminit
