@@ -3,19 +3,19 @@ package pckg_uml;
 
 //nasljeđivanje
 
-public class Student extends User{
-    public Student(String userName, String mail, String password) {
-        super(userName, mail, password);
+public class Student extends Person{
+    public Student(String name, String surname){
+
+        super(name, surname);
+        System.out.println(this.getClass().getSimpleName() + " constructor called!");
+
     }
 
 
-    @Override
-    public boolean activateAccount() {
-        return super.activateAccount();
+    public void askQuestion() {
+
+        System.out.println("Student: " + this.name + " ask question!");
     }
 
-    public int getExam(String course){
 
-        return 5;
-    }
 }
