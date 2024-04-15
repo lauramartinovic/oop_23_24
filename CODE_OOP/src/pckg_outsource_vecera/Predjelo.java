@@ -2,21 +2,21 @@ package pckg_outsource_vecera;
 
 public class Predjelo {
 
-    private String naziv;
-    private String vrsta;
-    private int kol;
+    protected String naziv;
+    protected String vrsta;
+    protected int kolicina;
 
-    public Predjelo(String naziv, String vrsta, int kol){
-        this.kol = kol;
+    public Predjelo(String naziv, String vrsta, int kolicina){
         this.naziv = naziv;
         this.vrsta = vrsta;
+        this.kolicina = kolicina;
     }
 
     public void pojediPredjelo(){
-        System.out.println("Pojedeno: " + getClass().getSimpleName() + "|" + naziv + "|" + "kol: " + kol);
+        System.out.println("pojedeno: " + getClass().getName() + " | naziv: " + naziv +  " | kol: " + kolicina );
     }
 
-    public int kojaKolicina(){
-        return kol;
+    int KojaKolicina(){
+        return kolicina;
     }
 }

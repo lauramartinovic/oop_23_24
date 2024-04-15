@@ -4,15 +4,21 @@ import pckg_outsource_vecera.Desert;
 import pckg_outsource_vecera.Predjelo;
 
 public class Vecera {
-
     public static void main(String[] args) {
+        Predjelo predjelo = new Predjelo("Cezar", "ssalata", 3);
+        GlavnoJelo glavnoJelo = new GlavnoJelo();
+        Desert desert = new Desert("Mouse", "kolač", 3);
 
-        Predjelo predjelo = new Predjelo("Cezar", "salata", 3);
-        GlavnoJelo glavno = new GlavnoJelo();
-        Desert desert = new Desert("Sladoled dupli", 2);
+//        //ne vide se atributi u Večera jer je bez modifikatora pristupa
+//        predjelo.pojediPredjelo();
+//        //vidljivi atributi iz večere jer je bez modifikatora pristupa
+//        float cijena = glavnoJelo.totalPrice();
+//        System.out.println(cijena);
 
-        predjelo.pojediPredjelo();
-        float cijena = glavno.totalPrice();
+        PredjeloNovo predjeloNovo = new PredjeloNovo("Grčka", "salata", 2, "main");
+        predjeloNovo.pojediPredjelo();
+
+
 
     }
 }

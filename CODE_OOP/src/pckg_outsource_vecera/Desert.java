@@ -1,14 +1,16 @@
 package pckg_outsource_vecera;
 
 public class Desert {
-
     String naziv;
-    int kol;
+    String vrsta;
+    int kolicina;
 
-    public Desert(String naziv, int kol){
-        this.kol = kol;
+    public Desert(String naziv, String vrsta, int kolicina){
         this.naziv = naziv;
+        this.vrsta = vrsta;
+        this.kolicina = kolicina;
     }
+
     void infoDesert(){
         System.out.println(this);
     }
@@ -17,7 +19,8 @@ public class Desert {
     public String toString() {
         return "Desert{" +
                 "naziv='" + naziv + '\'' +
-                ", kol=" + kol +
+                ", vrsta='" + vrsta + '\'' +
+                ", kolicina=" + kolicina +
                 '}';
     }
 }
