@@ -37,5 +37,24 @@ public class FleetVehicle {
         }
     }
 
+    public Vehicle getVehicleFromFleet(int indPos){
+
+        Vehicle vehicle = null;
+
+        if(indPos < 0 || indPos > vehicles.size()){
+            System.out.println("Index out of bounds - size is : " + vehicles.size());
+        } else {
+            vehicle = vehicles.get(indPos);
+        }
+
+        return vehicle;
+    }
+
+    public Vehicle getVehicle(Vehicle vehicle){
+
+        return null;
+
+    }
+
 
 }
